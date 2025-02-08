@@ -3,7 +3,7 @@ import PrivateRoute from "./PrivateRoute";
 import Tasks from "../Pages/Tasks";
 import Login from "../Pages/Login";
 
-const AllRoutes: React.FC = () => {
+const AllRoutes = () => {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />

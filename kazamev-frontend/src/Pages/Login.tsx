@@ -27,8 +27,6 @@ const Login = () => {
             Signup
           </div>
         </div>
-
-        {/* Login or Signup Card */}
         <div className="mt-4">{isLogin ? <LoginCard /> : <SignupCard setIsLogin={setIsLogin} />}</div>
       </div>
     </div>

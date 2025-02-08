@@ -6,8 +6,6 @@ import { Form, Input, Button, notification } from "antd";
 const LoginCard = () => {
   const { login } = useContext(AuthContext)!;
   const [loading, setLoading] = useState(false);
-
-  // Handle Login
   const handleLogin = async (values: { email: string; password: string }) => {
     setLoading(true);
     try {
@@ -28,7 +26,6 @@ const LoginCard = () => {
       setLoading(false);
     }
   };
-
   return (
     <div className="flex items-center justify-center bg-gray-100 p-4">
       <div className="bg-white shadow-lg rounded-lg w-full max-w-md p-6">
